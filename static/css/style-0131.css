@@ -1,0 +1,198 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--fs-background-color);
+  color: var(--fs-text-color);
+  font-size: 16px;
+}
+
+:root {
+  --fs-primary-color: #007bffde;
+  --fs-second-color: #41ac52;
+  --fs-third-color: #ff3300;
+  --fs-fourth-color: #ff6600;
+  --fs-fifth-color: #ff9900;
+  --fs-text-color: #393e41;
+  --fs-text-second-color: #333;
+  --fs-text-third-color: #666;
+  --fs-text-fourth-color: #999;
+  --fs-text-fifth-color: #ebebeb;
+  --fs-text-six-color: #adb7be;
+  --fs-gray-primary-color: #333;
+  --fs-gray-second-color: #666;
+  --fs-gray-third-color: #999;
+  --fs-highlight-color: #33bb00;
+  --fs-background-color: #ffffff;
+  --fs-background-second-color: #efefef;
+  --fs-background-third-color: #262626;
+  --fs-background-fourth-color: #1d1c1e;
+  --fs-background-fifth-color: #181818;
+  --fs-background-six-color: #ffffff;
+  --fs-background-seven-color: rgba(var(--fs-accent-black), var(--fs-opacity-4));
+  --fs-btn-normal-background-color: #393a43;
+  --fs-btn-normal-text-color: #ebebeb;
+  --fs-btn-normal-background-second-color: rgba(var(--fs-accent-black), var(--fs-opacity-5));
+  --fs-btn-normal-text-second-color: var(--fs-text-third-color);
+  --fs-btn-hover-background-second-color: rgba(255, 214, 119, 0.2);
+  --fs-btn-hover-text-second-color: var(--fs-text-second-color);
+  --fs-border-normal-color: #ddd;
+  --fs-border-highlight-color: #adb7be;
+  --fs-high-color: #eae2b7;
+  --fs-seperator-color: #efefef;
+  --fs-seperator-second-color: #eaeaea;
+  --fs-spacing: 1rem;
+  --fs-accent-black: 0, 0, 0;
+  --fs-accent-white: 255, 255, 255;
+  --fs-opacity-4: 4%;
+  --fs-opacity-5: 5%;
+}
+
+:root:root {
+  --swiper-theme-color: var(--fs-primary-color);
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-pagination-bullet-size: 0.625rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fs-margin {
+  margin: var(--fs-spacing);
+}
+
+.fs-margin-top {
+  margin-top: var(--fs-spacing);
+}
+
+.fs-margin-bottom {
+  margin-bottom: var(--fs-spacing);
+}
+
+.fs-margin-left {
+  margin-left: var(--fs-spacing);
+}
+
+.fs-margin-right {
+  margin-right: var(--fs-spacing);
+}
+
+.fs-no-margin {
+  margin: 0;
+}
+
+.fs-padding {
+  padding: var(--fs-spacing);
+}
+
+.fs-padding-top {
+  padding-top: var(--fs-spacing);
+}
+
+.fs-padding-right {
+  padding-right: var(--fs-spacing);
+}
+
+.fs-padding-bottom {
+  padding-bottom: var(--fs-spacing);
+}
+
+.fs-padding-left {
+  padding-left: var(--fs-spacing);
+}
+
+.fs-no-padding {
+  padding: 0;
+}
+
+.fs-radius-4,
+.radius-4 {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.fs-radius-8 {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1025px) {
+  .fs-margin-section {
+    margin: 1.75rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fs-margin-section {
+    margin: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .fs-margin-section {
+    margin: 1.25rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .fs-margin-section {
+    margin: var(--fs-spacing);
+  }
+}
+input[type=checkbox] {
+  position: relative;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.125rem;
+  background-color: var(--fs-background-third-color);
+  border: 1px solid var(--fs-border-normal-color);
+  box-sizing: border-box;
+}
+
+input[type=checkbox]:checked::before {
+  color: white;
+  background-color: var(--fs-primary-color);
+  border: none;
+}
+
+input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+input[type=checkbox]:checked::after {
+  left: 0.375rem;
+  top: 0.125rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

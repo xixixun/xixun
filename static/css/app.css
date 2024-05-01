@@ -1,0 +1,251 @@
+.app-page {
+  display: flex;
+  justify-content: center;
+}
+.app-page .app-page-containner {
+  width: calc(100vw - 2rem);
+  max-width: 680px;
+  margin: 50px 1rem;
+}
+.app-page .app-page-containner .app-page-header .logo {
+  display: block;
+  width: 180px;
+  height: 60px;
+  background-image: url("../image/logo_horizontal.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.app-page .app-page-containner .app-page-main {
+  margin-top: 2rem;
+}
+.app-page .app-page-containner .app-page-main .section .section-header .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.app-page .app-page-containner .app-page-main .section .section-header .title-box .title .title-icon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+.app-page .app-page-containner .app-page-main .section .section-header .title-box .title .title-label {
+  font-size: 18px;
+}
+.app-page .app-page-containner .app-page-main .section .section-header .title-box .title .title-icon + .title-label {
+  margin-left: calc(var(--fs-spacing) / 2);
+}
+.app-page .app-page-containner .app-page-main .section .section-header .install-guide-btn,
+.app-page .app-page-containner .app-page-main .section .section-header .dns-guide-btn {
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  color: #ff6600;
+}
+.app-page .app-page-containner .app-page-main .section .section-main {
+  margin: var(--fs-spacing) 0;
+  background-color: rgba(255, 255, 255, 0.1254901961);
+  border-radius: 1rem;
+  border: 1px solid var(--fs-border-normal-color);
+  box-sizing: border-box;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row {
+  margin: 0 var(--fs-spacing);
+  padding: var(--fs-spacing) 0;
+  display: flex;
+  gap: var(--fs-spacing);
+  border-bottom: 1px solid #efefef;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-lSide .img {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-size: 100%;
+  background-position: center;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-lSide .img_ios {
+  background-image: url("../image/ios.png");
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-lSide .img_android {
+  background-image: url("../image/android.png");
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-lSide .img_webapp {
+  background-image: url("../image/webapp.png");
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-lSide .img_macos {
+  background-image: url("../image/ios.png");
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-lSide .img_windows {
+  background-image: url("../image/windows.png");
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main {
+  flex: 1;
+  align-items: center;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .section-row-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--fs-text-color);
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .section-row-subtitle {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--fs-text-third-color);
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .tag-rec,
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .tag-pri,
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .tag-sec {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .tag-rec {
+  background-color: #000000;
+  color: var(--fs-text-fifth-color);
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .tag-pri {
+  background-color: #007bffa1;
+  color: var(--fs-text-color);
+  white-space: nowrap;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-main .tag-sec {
+  background-color: rgb(94 140 113 / 13%);
+  color: var(--fs-text-color);
+  white-space: nowrap;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide {
+  width: 80px;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .copy-btn i,
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .enter-btn i {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .copy-btn {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  border-radius: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--fs-text-color);
+  font-size: 0.75rem;
+  background: linear-gradient(to bottom right, #70c5ffc9, #0980ffe0);
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .copy-btn:hover {
+  background: var(--fs-primary-color);
+  color: var(--fs-text-color);
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .enter-btn {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  border-radius: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  background: rgb(3 57 255 / 5%);
+  color: #595454;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .enter-btn:hover {
+  background: var(--fs-btn-hover-background-second-color);
+  color: var(--fs-btn-hover-text-second-color);
+}
+.app-page .app-page-containner .app-page-main .section .section-main .section-row .section-row-rSide .guide-btn {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--fs-text-fourth-color);
+  text-align: center;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .qrcode-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 var(--fs-spacing);
+  padding: calc(3 * var(--fs-spacing)) 0;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .qrcode-row .qrcode {
+  width: 140px;
+  height: 140px;
+  border: 10px solid white;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+.app-page .app-page-containner .app-page-main .section .section-main .qrcode-row .qrcode-label {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+.app-page .app-page-containner .app-page-main .section + .section {
+  margin-top: calc(2 * var(--fs-spacing));
+}
+.app-page .app-page-containner .app-page-footer {
+  padding: var(--fs-spacing) 0;
+  font-size: 0.875rem;
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-service h4,
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-contact h4 {
+  color: var(--fs-text-fourth-color);
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-service ul,
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-contact ul {
+  margin-top: 0.5rem;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-service ul li,
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-contact ul li {
+  margin-right: 1rem;
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-service ul li a,
+.app-page .app-page-containner .app-page-footer .contact-wrap .app-contact ul li a {
+  color: var(--fs-text-color);
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .qrcode-area {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .qrcode-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.app-page .app-page-containner .app-page-footer .contact-wrap .qrcode-box .qrcode {
+  border: 0.5rem solid white;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+}
+.app-page .app-page-containner .app-page-footer .app-copyright {
+  margin-top: 2rem;
+}
+.app-page .app-page-containner .app-page-footer .app-copyright p {
+  margin: 0.25rem 0;
+  line-height: 150%;
+  font-size: 0.875rem;
+}
+.app-page .app-page-containner .app-page-footer .app-copyright a {
+  color: var(--fs-text-color);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 561px) {
+  .contact-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 560px) {
+  .contact-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
